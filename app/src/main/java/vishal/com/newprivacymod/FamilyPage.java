@@ -32,27 +32,7 @@ public class FamilyPage extends Activity {
         super.onCreate(savedInstanceState);
         final String url = "http://192.168.0.7/occasions/getupdate.php";
         new GetUpdate().execute(url);
-       /* try {
-            a = new JSONArray(s.toString());
-
-            int length = a.length();
-            for (int i = 0; i < length; i++) {
-                //Information information=new Information();
-                JSONObject jsonObject = a.getJSONObject(i);
-                name = jsonObject.getString("userid");
-                url = jsonObject.getString("imageurl");
-                // data.add(information);
-
-                //setImages(Integer.parseInt(name));
-
-                Toast.makeText(FamilyPage.this, name + " http://192.168.0.7/occasions/" + url, Toast.LENGTH_SHORT).show();
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }*/
-
-
-        //new UpdatePage().execute();
+       
 
         /*SharedPreferences.Editor editor = getSharedPreferences("occassions", MODE_PRIVATE).edit();
         editor.putBoolean("autodownload", true);
@@ -122,13 +102,10 @@ public class FamilyPage extends Activity {
 
                 int length = a.length();
                 for (int i = 0; i < length; i++) {
-                    //Information information=new Information();
                     JSONObject jsonObject = a.getJSONObject(i);
                     name = jsonObject.getString("userid");
                     url = jsonObject.getString("imageurl");
-                    // data.add(information);
 
-                    //setImages(Integer.parseInt(name));
 
                     Toast.makeText(FamilyPage.this, name + " http://192.168.0.7/occasions/" + url, Toast.LENGTH_SHORT).show();
                 }
